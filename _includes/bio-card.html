@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+    {% assign sorted = site.team | sort: 'order' %}
+    {% for member in sorted %}
+        {% if member.exclude == true %}
+            {% continue %}
+        {% endif %}
+        <div class="col-md-4">
+            <div class="card mb-2">
+                <img class="card-img-top" src="{{ member.image }}" alt="{{member.name}}">
+                <div class="card-body">
+                    <h4 class="card-title">{{ member.name }}</h4>
+                    <p class="card-text font-weight-bold">{{ member.position }}</p>
+                    <p class="card-text font-weight-bold">{{ member.location }}</p>
+                    <p class="card-text">{{ member.content }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
