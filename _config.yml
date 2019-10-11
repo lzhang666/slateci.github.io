@@ -35,6 +35,8 @@ collections:
     output: false
   glossary:
     output: false
+  team:
+    output: true
 
 plugins:
   - jekyll-redirect-from

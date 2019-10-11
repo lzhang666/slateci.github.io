@@ -46,3 +46,6 @@ type: markdown
 
 Supported by the National Science Foundation under [Grant No. 1724821.](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1724821&HistoricalAwards=false)
 
+## SLATE Team
+
+{% include bio-card.html %}
