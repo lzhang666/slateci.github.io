@@ -44,7 +44,7 @@ jobs:
           python slateci-unit-tests/main.py
       
       # Return result to Slack if tests failed
-      - name: Notify Slack Fail
+      - name: Notify Slack If Failed
         if: failure()
         id: slack # IMPORTANT: reference this step ID value in future Slack steps
         env:
